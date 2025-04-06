@@ -1,52 +1,55 @@
-                           
-![Awesome ReadME](https://raw.githubusercontent.com/ParasSalunke/Tourist-Travel-Agency-Website/main/travel-agency-react-template.jpg)
- 
-# Tourist - Travel Agency React Website
-
-[![GitHub](https://img.shields.io/github/license/navendu-pottekkat/awesome-readme)](https://img.shields.io/github/license/navendu-pottekkat/awesome-readme)
-
-###
-
-# Languages-Frameworks-Tools Used
-
-###
-
-<div align="left">
-  <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=js" height="40" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=html" height="40" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=css" height="40" alt="css3 logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=bootstrap" height="40" alt="bootstrap logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=jquery" height="40" alt="jquery logo"  />
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=FF6F61&center=true&vCenter=true&width=900&lines=Welcome+to+Tourist+-+Travel+Agency+Website!;Built+with+React%2C+Bootstrap+and+CSS3;Plan+your+next+adventure+today!+%F0%9F%8C%8D" alt="Animated header" />
 </div>
 
-###
+---
 
-# License
+# 🌍 Tourist - Travel Agency React Website
 
-MIT License
+A modern and responsive travel agency website template built with **React**, **Bootstrap**, and **CSS3**.  
+Ideal for travel agencies, tour operators, or any tourism-based business!
 
-Copyright (c) 2024 Paras Nitin Salunke
+![License](https://img.shields.io/github/license/navendu-pottekkat/awesome-readme)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+---
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+## 🧰 Tech Stack
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+<div align="left">
+  <img src="https://skillicons.dev/icons?i=react" height="40" alt="React" />
+  <img src="https://skillicons.dev/icons?i=js" height="40" alt="JavaScript" />
+  <img src="https://skillicons.dev/icons?i=html" height="40" alt="HTML5" />
+  <img src="https://skillicons.dev/icons?i=css" height="40" alt="CSS3" />
+  <img src="https://skillicons.dev/icons?i=bootstrap" height="40" alt="Bootstrap" />
+  <img src="https://skillicons.dev/icons?i=jquery" height="40" alt="jQuery" />
+</div>
+
+---
+
+## ✨ Features
+
+- 🎯 Eye-catching landing page
+- 🧭 Interactive destination highlights
+- 📱 Fully responsive for all devices
+- 🎨 Custom animations & transitions
+- 📦 Component-based architecture
+- ⚡ Smooth performance & lightweight
+
+---
+
+## 📁 Project Structure
+
+```bash
+.
+├── public/
+│   └── index.html
+├── src/
+│   ├── assets/         # Images & media
+│   ├── components/     # Navbar, Footer, Cards, etc.
+│   ├── pages/          # Home, About, Packages, Contact
+│   ├── styles/         # CSS and SCSS files
+│   ├── App.js
+│   └── index.js
+├── App.css
+├── package.json
+└── README.md
