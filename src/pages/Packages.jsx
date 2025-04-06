@@ -227,7 +227,7 @@ Please send me a detailed itinerary and pricing information. Thank you!`;
         </div>
       </div>
 
-      {/* Panch Kedar Section */}
+      {/* Panch Kedar Section - UPDATED */}
       <div className="container-xxl py-5 bg-light">
         <div className="container">
           <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -235,16 +235,91 @@ Please send me a detailed itinerary and pricing information. Thank you!`;
               Sacred Shiva Dhamas
             </h6>
             <h1 className="mb-5">Panch Kedar Yatra Packages</h1>
+            <p className="lead mb-5">Explore the five sacred abodes of Lord Shiva in the majestic Himalayas</p>
           </div>
+          
+          {/* Individual Temple Packages */}
           <div className="row g-4 justify-content-center">
+            {[
+              { 
+                name: 'Tungnath Package', 
+                location: 'Uttarakhand', 
+                price: 5999,
+                details: 'Visit the highest Shiva temple in the world with spiritual guides',
+                duration: '2D/1N',
+                includes: ['Trek Support', 'Accommodation', 'Breakfast']
+              },
+              { 
+                name: 'Rudranath Temple Package', 
+                location: 'Uttarakhand', 
+                price: 8999,
+                details: 'Trek through beautiful forest trails to the face form of Lord Shiva',
+                duration: '3D/2N',
+                includes: ['Trek Equipment', 'Meals', 'Guide']
+              },
+              { 
+                name: 'Madhyamaheshwar Package', 
+                location: 'Uttarakhand', 
+                price: 7999,
+                details: 'Journey to the navel form of Lord Shiva in serene Himalayan settings',
+                duration: '3D/2N',
+                includes: ['Accommodation', 'Special Puja', 'Transport']
+              },
+              { 
+                name: 'Rudranath + Kalpeshwar Package', 
+                location: 'Uttarakhand', 
+                price: 9999,
+                details: 'Combined pilgrimage to face and matted hair forms of Lord Shiva',
+                duration: '4D/3N',
+                includes: ['All Transfers', 'Meals', 'Temple Guide']
+              },
+            ].map((pkg, index) => (
+              <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay={`0.${index+1}s`} key={index}>
+                <div className="package-item border border-2 border-success rounded">
+                  <div className="position-relative">
+                    <img className="img-fluid" src={`assets/img/kedar-single-${index + 1}.jpg`} alt={pkg.name} />
+                    <div className="package-overlay">
+                      <small className="badge bg-danger">Limited Offer</small>
+                    </div>
+                  </div>
+                  <div className="p-4">
+                    <div className="d-flex justify-content-between mb-3">
+                      <small><i className="fa fa-map-marker-alt text-success me-2" />{pkg.location}</small>
+                      <small><i className="fa fa-calendar-alt text-success me-2" />{pkg.duration}</small>
+                    </div>
+                    <h4 className="mb-3 text-success">{pkg.name}</h4>
+                    <p className="text-dark mb-4">{pkg.details}</p>
+                    <div className="d-flex justify-content-between bg-light p-3 rounded">
+                      <h5 className="mb-0">₹{pkg.price.toLocaleString()}</h5>
+                      <div className="h6 mb-0">
+                        <i className="fa fa-star text-warning" />
+                        <small className="text-body">(18 Reviews)</small>
+                      </div>
+                    </div>
+                    <div className="d-grid gap-2 mt-3">
+                      <a href="#" className="btn btn-success" onClick={() => directWhatsAppConnect(pkg.name, pkg.price)}>
+                        <i className="fab fa-whatsapp me-2" />Book Now via WhatsApp
+                      </a>
+                      <a href="#" className="btn btn-outline-success" onClick={() => handleCustomizeClick(pkg.name, pkg.price)}>
+                        Customize Package
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          {/* Full Panch Kedar Packages */}
+          <div className="row g-4 justify-content-center mt-5">
             {[
               { 
                 name: 'Complete Panch Kedar', 
                 location: 'Uttarakhand', 
-                price: 42999,
+                price: 34999, // Updated price
                 details: 'Sacred pilgrimage to all five Kedar temples - Kedarnath, Tungnath, Rudranath, Madhyamaheshwar & Kalpeshwar',
                 duration: '9D/8N',
-                includes: ['VIP Darshan', 'Helicopter Option', 'Trek Support']
+                includes: ['VIP Darshan', 'Helicopter Option', 'Trek Support', 'All Accommodation']
               },
               { 
                 name: 'Kedarnath-Tungnath Trek', 
@@ -268,7 +343,7 @@ Please send me a detailed itinerary and pricing information. Thank you!`;
                   <div className="position-relative">
                     <img className="img-fluid" src={`assets/img/kedar-${index + 1}.jpg`} alt={pkg.name} />
                     <div className="package-overlay">
-                      <small className="badge bg-success">New Package</small>
+                      <small className="badge bg-success">Best Value</small>
                     </div>
                   </div>
                   <div className="p-4">
@@ -493,11 +568,6 @@ Please send me a detailed itinerary and pricing information. Thank you!`;
                 price: 2999,
                 desc: 'Experienced Pandit for rituals & guidance'
               },
-              { 
-                title: 'Pind Daan Package', 
-                price: 15999,
-                desc: 'Gaya/Varanasi ancestral rituals with video documentation'
-              },
             ].map((service, index) => (
               <div className="col-lg-4 col-md-6 wow fadeInUp" key={index}>
                 <div className="service-card shadow p-4 rounded">
@@ -520,6 +590,8 @@ Please send me a detailed itinerary and pricing information. Thank you!`;
           </div>
         </div>
       </div>
+
+
 
       {/* Booking Section */}
       <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
