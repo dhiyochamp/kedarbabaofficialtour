@@ -79,12 +79,28 @@ Please provide details and quote for this pilgrimage.
 
   return (
     <div className="pilgrimage-main">
-      {/* Hero Section with Video Background */}
-      <div className="hero-container position-relative overflow-hidden">
-        <video autoPlay muted loop className="hero-video position-absolute w-100 h-100 object-cover">
-          <source src="kedarnath.mp4" type="video/mp4" />
-        </video>
-        <div className="hero-overlay position-absolute w-100 h-100 bg-dark" style={{ opacity: 0.5 }}></div>
+  {/* Hero Section with Video Background */}
+  <div className="hero-container position-relative overflow-hidden" style={{ height: '100vh' }}>
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="hero-video position-absolute w-100 h-100 object-cover"
+    >
+      <source src="/kedarnath.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    {/* Optional: Add overlay content */}
+    <div className="hero-content position-relative text-white text-center">
+      <h1>Welcome to Kedarnath Pilgrimage</h1>
+      <p>Experience the divine journey</p>
+    </div>
+  </div>
+</div>
+
+    <div className="hero-overlay position-absolute w-100 h-100 bg-dark" style={{ opacity: 0.5 }}></div>
         <div className="container position-relative py-5 my-5 z-index-1">
           <div className="row justify-content-center py-5">
             <div className="col-lg-10 pt-lg-5 mt-lg-5 text-center">
