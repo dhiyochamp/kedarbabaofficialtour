@@ -78,7 +78,7 @@ Please provide details and quote for this pilgrimage.
   };
 
   return (
-    <div className="pilgrimage-main">
+  <div className="pilgrimage-main">
   {/* Hero Section with Video Background */}
   <div className="hero-container position-relative overflow-hidden" style={{ height: '100vh' }}>
     <video
@@ -91,7 +91,6 @@ Please provide details and quote for this pilgrimage.
       <source src="/kedarnath.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
-
     {/* Optional: Add overlay content */}
     <div className="hero-content position-relative text-white text-center">
       <h1>Welcome to Kedarnath Pilgrimage</h1>
