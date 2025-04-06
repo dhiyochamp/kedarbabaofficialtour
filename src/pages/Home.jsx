@@ -79,73 +79,72 @@ Please provide details and quote for this pilgrimage.
 
   return (
    <div className="pilgrimage-main">
-      {/* Hero Section with Video Background */}
-      <div className="hero-container position-relative overflow-hidden" style={{ height: '100vh' }}>
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="hero-video position-absolute w-100 h-100 object-cover"
-        >
-          <source src="/kedarnath.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-
-        <div className="hero-content position-relative text-white text-center">
-          <h1>Welcome to Kedarnath Pilgrimage</h1>
-          <p>Experience the divine journey</p>
-        </div>
-      </div>
-
-      {/* The rest of the content should be INSIDE the pilgrimage-main div */}
-     
-      <div className="hero-overlay position-absolute w-100 h-100 bg-dark" style={{ opacity: 0.5 }}></div>
-        <div className="container position-relative py-5 my-5 z-index-1">
-          <div className="row justify-content-center py-5">
-            <div className="col-lg-10 pt-lg-5 mt-lg-5 text-center">
-              <div className="animated fadeInDown">
-                <div className="d-inline-block border-start border-end border-top border-light px-5 py-2 mb-3">
-                  <h6 className="text-white text-uppercase m-0">Divine Journey</h6>
-                </div>
-                <h1 className="display-2 text-white fw-bold mb-4 text-shadow">
-                  Sacred Hindu Pilgrimage Journeys
-                </h1>
-                <p className="fs-4 text-white mb-5 text-shadow">
-                  Experience Moksha through Ancient Temple Circuits & Authentic Vedic Rituals
-                </p>
-                <div className="position-relative w-75 mx-auto mb-5">
-                  <input
-                    className="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5 shadow"
-                    type="text"
-                    placeholder="Search Pilgrimage (Eg: Panch Kedar, Kailash Yatra)"
-                  />
-                  <button
-                    type="button"
-                    className="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2"
-                    style={{ marginTop: 7 }}
-                  >
-                    <i className="fas fa-search me-2"></i>Search
-                  </button>
-                </div>
-                <div className="d-flex justify-content-center">
-                  <a href="#pilgrimage-types" className="btn btn-outline-light rounded-pill px-4 py-3 mx-2">
-                    <i className="fas fa-om me-2"></i>Explore Yatras
-                  </a>
-                  <a href="#enquiry-form" className="btn btn-primary rounded-pill px-4 py-3 mx-2">
-                    <i className="fas fa-paper-plane me-2"></i>Plan Your Journey
-                  </a>
-                </div>
-              </div>
+  {/* Hero Section with Video Background */}
+  <div className="hero-container position-relative overflow-hidden" style={{ height: '100vh' }}>
+    {/* Video Background */}
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="hero-video position-absolute w-100 h-100 object-cover"
+    >
+      <source src="/kedarnath.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    
+    {/* Dark Overlay */}
+    <div className="hero-overlay position-absolute w-100 h-100 bg-dark" style={{ opacity: 0.5 }}></div>
+    
+    {/* Hero Content */}
+    <div className="container position-relative py-5 my-5 z-index-1">
+      <div className="row justify-content-center py-5">
+        <div className="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+          <div className="animated fadeInDown">
+            <div className="d-inline-block border-start border-end border-top border-light px-5 py-2 mb-3">
+              <h6 className="text-white text-uppercase m-0">Divine Journey</h6>
+            </div>
+            <h1 className="display-2 text-white fw-bold mb-4 text-shadow">
+              Sacred Hindu Pilgrimage Journeys
+            </h1>
+            <p className="fs-4 text-white mb-5 text-shadow">
+              Experience Moksha through Ancient Temple Circuits & Authentic Vedic Rituals
+            </p>
+            <div className="position-relative w-75 mx-auto mb-5">
+              <input
+                className="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5 shadow"
+                type="text"
+                placeholder="Search Pilgrimage (Eg: Panch Kedar, Kailash Yatra)"
+              />
+              <button
+                type="button"
+                className="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2"
+                style={{ marginTop: 7 }}
+              >
+                <i className="fas fa-search me-2"></i>Search
+              </button>
+            </div>
+            <div className="d-flex justify-content-center">
+              <a href="#pilgrimage-types" className="btn btn-outline-light rounded-pill px-4 py-3 mx-2">
+                <i className="fas fa-om me-2"></i>Explore Yatras
+              </a>
+              <a href="#enquiry-form" className="btn btn-primary rounded-pill px-4 py-3 mx-2">
+                <i className="fas fa-paper-plane me-2"></i>Plan Your Journey
+              </a>
             </div>
           </div>
         </div>
-        <div className="hero-wave position-absolute bottom-0 w-100">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#ffffff" fillOpacity="1" d="M0,96L80,106.7C160,117,320,139,480,128C640,117,800,75,960,80C1120,85,1280,139,1360,165.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-          </svg>
-        </div>
       </div>
+    </div>
+    
+    {/* Wave Shape Divider */}
+    <div className="hero-wave position-absolute bottom-0 w-100">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffffff" fillOpacity="1" d="M0,96L80,106.7C160,117,320,139,480,128C640,117,800,75,960,80C1120,85,1280,139,1360,165.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+      </svg>
+    </div>
+  </div>
+</div>
 
       {/* Pilgrimage Highlights Cards */}
       <div className="container-fluid pt-4 pb-5 bg-white">
