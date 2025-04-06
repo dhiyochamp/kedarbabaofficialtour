@@ -82,8 +82,9 @@ Please provide details and quote for this pilgrimage.
       {/* Hero Section with Video Background */}
       <div className="hero-container position-relative overflow-hidden">
         <video autoPlay muted loop className="hero-video position-absolute w-100 h-100 object-cover">
-          <source src="/kedarnath.mp4" type="video/mp4" />
-        </video>
+  <source src="/kedarnath.mp4" type="video/mp4" />
+</video>
+
         <div className="hero-overlay position-absolute w-100 h-100 bg-dark" style={{ opacity: 0.5 }}></div>
         <div className="container position-relative py-5 my-5 z-index-1">
           <div className="row justify-content-center py-5">
