@@ -80,23 +80,11 @@ Please provide details and quote for this pilgrimage.
   return (
     <div className="pilgrimage-main">
       {/* Hero Section with Video Background */}
-      <div className="hero-container position-relative overflow-hidden" style={{ height: '100vh' }}>
-        {/* Video Background */}
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="hero-video position-absolute w-100 h-100 object-cover"
-        >
-          <source src="/kedarnath.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+      <div className="hero-container position-relative overflow-hidden">
+        <video autoPlay muted loop className="hero-video position-absolute w-100 h-100 object-cover">
+          <source src="/videos/himalayas.mp4" type="video/mp4" />
         </video>
-
-        {/* Dark Overlay */}
         <div className="hero-overlay position-absolute w-100 h-100 bg-dark" style={{ opacity: 0.5 }}></div>
-
-        {/* Hero Content */}
         <div className="container position-relative py-5 my-5 z-index-1">
           <div className="row justify-content-center py-5">
             <div className="col-lg-10 pt-lg-5 mt-lg-5 text-center">
@@ -136,19 +124,13 @@ Please provide details and quote for this pilgrimage.
             </div>
           </div>
         </div>
-
-        {/* Wave Shape Divider */}
         <div className="hero-wave position-absolute bottom-0 w-100">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path
-              fill="#ffffff"
-              fillOpacity="1"
-              d="M0,96L80,106.7C160,117,320,139,480,128C640,117,800,75,960,80C1120,85,1280,139,1360,165.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-            ></path>
+            <path fill="#ffffff" fillOpacity="1" d="M0,96L80,106.7C160,117,320,139,480,128C640,117,800,75,960,80C1120,85,1280,139,1360,165.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
           </svg>
         </div>
       </div>
-    </div>
+
       {/* Pilgrimage Highlights Cards */}
       <div className="container-fluid pt-4 pb-5 bg-white">
         <div className="container">
@@ -609,7 +591,7 @@ Please provide details and quote for this pilgrimage.
                         </div>
                       </div>
                       <div className="col-md-6">
-                       <div className="form-floating">
+                      <div className="form-floating">
                           <select
                             className="form-select"
                             id="pilgrimageType"
@@ -813,6 +795,62 @@ Please provide details and quote for this pilgrimage.
               <a href="/faqs" className="btn btn-outline-primary rounded-pill px-5 py-3">
                 <i className="fas fa-question-circle me-2"></i>View All FAQs
               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <div className="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div className="container py-5">
+          <div className="row g-5">
+            <div className="col-lg-3 col-md-6">
+              <h4 className="text-white mb-3">Company</h4>
+              <a className="btn btn-link" href="/about">About Us</a>
+              <a className="btn btn-link" href="/contact">Contact Us</a>
+              <a className="btn btn-link" href="/services">Our Services</a>
+              <a className="btn btn-link" href="/terms">Terms & Condition</a>
+              <a className="btn btn-link" href="/support">Support</a>
+            </div>
+            <div className="col-lg-3 col-md-6">
+              <h4 className="text-white mb-3">Quick Links</h4>
+              <a className="btn btn-link" href="/char-dham">Char Dham Yatra</a>
+              <a className="btn btn-link" href="/panch-kedar">Panch Kedar</a>
+              <a className="btn btn-link" href="/kailash">Kailash Mansarovar</a>
+              <a className="btn btn-link" href="/jyotirlinga">12 Jyotirlingas</a>
+              <a className="btn btn-link" href="/shakti-peeth">Shakti Peeths</a>
+            </div>
+            <div className="col-lg-3 col-md-6">
+              <h4 className="text-white mb-3">Contact</h4>
+              <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>123 Street, Haridwar, Uttarakhand, India</p>
+              <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+91 9099081248</p>
+              <p className="mb-2"><i className="fa fa-envelope me-3"></i>info@kedarbaba.com</p>
+              <div className="d-flex pt-2">
+                <a className="btn btn-outline-light btn-social" href="#"><i className="fab fa-twitter"></i></a>
+                <a className="btn btn-outline-light btn-social" href="#"><i className="fab fa-facebook-f"></i></a>
+                <a className="btn btn-outline-light btn-social" href="#"><i className="fab fa-youtube"></i></a>
+                <a className="btn btn-outline-light btn-social" href="#"><i className="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6">
+              <h4 className="text-white mb-3">Newsletter</h4>
+              <p>Subscribe for spiritual insights and pilgrimage updates</p>
+              <div className="position-relative mx-auto" style={{ maxWidth: "400px" }}>
+                <input className="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
+                <button type="button" className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="copyright">
+            <div className="row">
+              <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy; <a className="border-bottom" href="#">Kedar Baba Pilgrimage</a>, All Right Reserved.
+              </div>
+              <div className="col-md-6 text-center text-md-end">
+                Designed By <a className="border-bottom" href="#">Dev Teams</a>
+              </div>
             </div>
           </div>
         </div>
