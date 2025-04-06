@@ -801,61 +801,7 @@ Please provide details and quote for this pilgrimage.
         </div>
       </div>
 
-      {/* Footer */}
-      <div className="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div className="container py-5">
-          <div className="row g-5">
-            <div className="col-lg-3 col-md-6">
-              <h4 className="text-white mb-3">Company</h4>
-              <a className="btn btn-link" href="/about">About Us</a>
-              <a className="btn btn-link" href="/contact">Contact Us</a>
-              <a className="btn btn-link" href="/services">Our Services</a>
-              <a className="btn btn-link" href="/terms">Terms & Condition</a>
-              <a className="btn btn-link" href="/support">Support</a>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <h4 className="text-white mb-3">Quick Links</h4>
-              <a className="btn btn-link" href="/char-dham">Char Dham Yatra</a>
-              <a className="btn btn-link" href="/panch-kedar">Panch Kedar</a>
-              <a className="btn btn-link" href="/kailash">Kailash Mansarovar</a>
-              <a className="btn btn-link" href="/jyotirlinga">12 Jyotirlingas</a>
-              <a className="btn btn-link" href="/shakti-peeth">Shakti Peeths</a>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <h4 className="text-white mb-3">Contact</h4>
-              <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>123 Street, Haridwar, Uttarakhand, India</p>
-              <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+91 9099081248</p>
-              <p className="mb-2"><i className="fa fa-envelope me-3"></i>info@kedarbaba.com</p>
-              <div className="d-flex pt-2">
-                <a className="btn btn-outline-light btn-social" href="#"><i className="fab fa-twitter"></i></a>
-                <a className="btn btn-outline-light btn-social" href="#"><i className="fab fa-facebook-f"></i></a>
-                <a className="btn btn-outline-light btn-social" href="#"><i className="fab fa-youtube"></i></a>
-                <a className="btn btn-outline-light btn-social" href="#"><i className="fab fa-instagram"></i></a>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <h4 className="text-white mb-3">Newsletter</h4>
-              <p>Subscribe for spiritual insights and pilgrimage updates</p>
-              <div className="position-relative mx-auto" style={{ maxWidth: "400px" }}>
-                <input className="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
-                <button type="button" className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="copyright">
-            <div className="row">
-              <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                &copy; <a className="border-bottom" href="#">Kedar Baba Pilgrimage</a>, All Right Reserved.
-              </div>
-              <div className="col-md-6 text-center text-md-end">
-                Designed By <a className="border-bottom" href="#">Dev Teams</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+   
 
       {/* Back to Top */}
       <a href="#" className="btn btn-lg btn-primary btn-lg-square back-to-top"><i className="fas fa-arrow-up"></i></a>
