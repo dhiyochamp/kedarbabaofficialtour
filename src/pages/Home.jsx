@@ -78,7 +78,7 @@ Please provide details and quote for this pilgrimage.
   };
 
   return (
-   <div className="pilgrimage-main">
+  <div className="pilgrimage-main">
   {/* Hero Section with Video Background */}
   <div className="hero-container position-relative overflow-hidden" style={{ height: '100vh' }}>
     {/* Video Background */}
@@ -145,7 +145,6 @@ Please provide details and quote for this pilgrimage.
     </div>
   </div>
 </div>
-
       {/* Pilgrimage Highlights Cards */}
       <div className="container-fluid pt-4 pb-5 bg-white">
         <div className="container">
