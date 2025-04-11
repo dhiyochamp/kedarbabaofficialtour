@@ -33,7 +33,7 @@ export default function Footer() {
             </div>
             <div className="col-lg-3 col-md-6">
               <h4 className="text-white mb-3">Contact</h4>
-              <p className="mb-2"><i className="fa fa-map-marker-alt me-3" /> E-110, Piyush Tower, Parking No. 3, Transport Nagar, Lucknow, Uttar Pradesh</p>
+              <p className="mb-2"><i className="fa fa-map-marker-alt me-3" />G.C Chamber, Shop No-27 Plot No.66, Opposite Noori Masjid, Gandhidham-370201</p>
               <p className="mb-2"><i className="fa fa-phone-alt me-3" /> +91 90990 81248</p>
               <p className="mb-2"><i className="fa fa-envelope me-3" /> kedarbabofficialtour@gmail.com</p>
               <div className="d-flex pt-2">
