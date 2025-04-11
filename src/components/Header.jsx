@@ -48,7 +48,7 @@ function Header() {
           <div className="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
             <div className="d-inline-flex align-items-center" style={{ height: 45 }}>
               <small className="me-3 text-light fade-in-delay-1">
-                <i className="fa fa-map-marker-alt me-2" /> E-110, Piyush Tower, Parking No. 3, Transport Nagar, Lucknow, Uttar Pradesh
+                <i className="fa fa-map-marker-alt me-2" />G.C Chamber, Shop No-27 Plot No.66,Opposite Noori Masjid,Gandhidham-370201
               </small>
               <small className="me-3 text-light fade-in-delay-2">
                 <i className="fa fa-phone-alt me-2" /> +91 90990 81248
