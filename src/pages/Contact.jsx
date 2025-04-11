@@ -34,14 +34,13 @@ function Contact() {
           <h6 className="section-title bg-white text-center text-primary px-3">
             Contact Us
           </h6>
-          <h1 className="mb-5">Contact For Any Query</h1>
+          <h1 className="mb-5">Reach Out For Your Travel Inquiries</h1>
         </div>
         <div className="row g-4">
           <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <h5>Get In Touch</h5>
             <p className="mb-4">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-              diam amet diam et eos
+              Have questions about your next adventure? Our travel experts are ready to help you plan the perfect trip. Contact us today!
             </p>
             <div className="d-flex align-items-center mb-4">
               <div
@@ -51,8 +50,8 @@ function Contact() {
                 <i className="fa fa-map-marker-alt text-white" />
               </div>
               <div className="ms-3">
-                <h5 className="text-primary">Office</h5>
-                <p className="mb-0">123 Street, New York, USA</p>
+                <h5 className="text-primary">Our Office</h5>
+                <p className="mb-0">G.C Chamber, Shop No-27 Plot No.66, Opposite Noori Masjid, Gandhidham-370201</p>
               </div>
             </div>
             <div className="d-flex align-items-center mb-4">
@@ -63,8 +62,8 @@ function Contact() {
                 <i className="fa fa-phone-alt text-white" />
               </div>
               <div className="ms-3">
-                <h5 className="text-primary">Mobile</h5>
-                <p className="mb-0">+012 345 67890</p>
+                <h5 className="text-primary">Call Us</h5>
+                <p className="mb-0">+91 90990 81248</p>
               </div>
             </div>
             <div className="d-flex align-items-center">
@@ -75,15 +74,15 @@ function Contact() {
                 <i className="fa fa-envelope-open text-white" />
               </div>
               <div className="ms-3">
-                <h5 className="text-primary">Email</h5>
-                <p className="mb-0">info@example.com</p>
+                <h5 className="text-primary">Email Us</h5>
+                <p className="mb-0">kedarbabofficialtour@gmail.com</p>
               </div>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
             <iframe
               className="position-relative rounded w-100 h-100"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.1798641546146!2d70.12979631545556!3d23.238809316462904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3950bbaf9825e8a7%3A0xd0e22cdf516ae0!2sGandhidham%2C%20Gujarat%20370201!5e0!3m2!1sen!2sin!4v1680500987654!5m2!1sen!2sin"
               frameBorder={0}
               style={{ minHeight: 300, border: 0 }}
               allowFullScreen=""
@@ -134,17 +133,17 @@ function Contact() {
                   <div className="form-floating">
                     <textarea
                       className="form-control"
-                      placeholder="Leave a message here"
+                      placeholder="Tell us about your travel plans"
                       id="message"
                       style={{ height: 100 }}
                       defaultValue={""}
                     />
-                    <label htmlFor="message">Message</label>
+                    <label htmlFor="message">Tell us about your travel plans</label>
                   </div>
                 </div>
                 <div className="col-12">
                   <button className="btn btn-primary w-100 py-3" type="submit">
-                    Send Message
+                    Send Inquiry
                   </button>
                 </div>
               </div>
