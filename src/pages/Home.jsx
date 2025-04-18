@@ -223,7 +223,6 @@ Please provide details and quote for this pilgrimage.
                       {[
                         "Shakti Peeth Darshan",
                         "Vedic Ritual Coordination",
-                        "Pind Daan Services",
                         "VIP Temple Darshan"
                       ].map((item, index) => (
                         <li key={index} className="mb-2">
