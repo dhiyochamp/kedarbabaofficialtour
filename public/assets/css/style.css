@@ -1,39 +1,28 @@
 :root {
-  /* Refined Dark Green Color Palette */
-  --primary: #1a4d2e; /* Deep forest green - main brand color */
-  --primary-light: #2e7d32; /* Lighter green for hover states */
-  --primary-lighter: #4caf50; /* Lightest green for accents */
-  --primary-dark: #0d3018; /* Darker green for borders and text */
-  --primary-darker: #093011; /* Deep dark green for shadows */
+  /* Vibrant Festival Theme Colors */
+  --primary: #FF5722; /* Vibrant orange from image */
+  --primary-light: #FF8A65; /* Lighter orange */
+  --primary-lighter: #FFCCBC; /* Very light orange for accents */
+  --primary-dark: #E64A19; /* Darker orange for borders and text */
+  --primary-darker: #BF360C; /* Deep orange for shadows */
   
-  /* Complementary colors - used sparingly */
-  --secondary: #ff9a3c; /* Complementary orange */
-  --secondary-light: #ffb74d; /* Lighter orange */
-  --secondary-dark: #e65100; /* Darker orange */
+  /* Complementary colors - used for accents */
+  --secondary: #2196F3; /* Bright blue from image */
+  --secondary-light: #64B5F6; /* Lighter blue */
+  --secondary-dark: #1976D2; /* Darker blue */
+  
+  /* Accent colors */
+  --accent-1: #E91E63; /* Pink from image */
+  --accent-2: #FFEB3B; /* Yellow from image */
+  --accent-3: #4CAF50; /* Green elements */
   
   /* Neutrals */
-  --light: #f8f9fa;
-  --dark: #121212;
-  --dark-2: #1e1e1e;
-  --border: #e0e0e0;
-  --text-medium: #4a5568;
-  --text-light: #718096;
-  
-  /* Enhanced Shadows */
-  --shadow-sm: 0 2px 12px rgba(9, 48, 17, 0.08);
-  --shadow-md: 0 4px 24px rgba(9, 48, 17, 0.12);
-  --shadow-lg: 0 8px 36px rgba(9, 48, 17, 0.16);
-  --shadow-primary: 0 4px 24px rgba(26, 77, 46, 0.3);
-  
-  /* Animation Timing */
-  --animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
-  --animation-timing-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.4);
-  
-  /* Glass Effect Variables */
-  --glass-bg: rgba(255, 255, 255, 0.08);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --glass-shadow: 0 8px 32px rgba(9, 48, 17, 0.2);
-  --glass-blur: blur(12px);
+  --light: #FFFFFF;
+  --dark: #212121;
+  --dark-2: #424242;
+  --border: #E0E0E0;
+  --text-medium: #616161;
+  --text-light: #9E9E9E;
 }
 
 /* Enhanced Animations */
