@@ -1,12 +1,12 @@
 :root {
-  /* Vibrant Festival Theme Colors */
+  /* Vibrant Festival Color Palette */
   --primary: #FF5722; /* Vibrant orange from image */
   --primary-light: #FF8A65; /* Lighter orange */
   --primary-lighter: #FFCCBC; /* Very light orange for accents */
   --primary-dark: #E64A19; /* Darker orange for borders and text */
   --primary-darker: #BF360C; /* Deep orange for shadows */
   
-  /* Complementary colors - used for accents */
+  /* Complementary colors */
   --secondary: #2196F3; /* Bright blue from image */
   --secondary-light: #64B5F6; /* Lighter blue */
   --secondary-dark: #1976D2; /* Darker blue */
@@ -20,15 +20,345 @@
   --light: #FFFFFF;
   --dark: #212121;
   --dark-2: #424242;
-  --border: #E0E0E0;
+  --border: #EEEEEE;
   --text-medium: #616161;
   --text-light: #9E9E9E;
+  
+  /* Enhanced Shadows with new colors */
+  --shadow-sm: 0 2px 12px rgba(191, 54, 12, 0.08);
+  --shadow-md: 0 4px 24px rgba(191, 54, 12, 0.12);
+  --shadow-lg: 0 8px 36px rgba(191, 54, 12, 0.16);
+  --shadow-primary: 0 4px 24px rgba(255, 87, 34, 0.3);
+  
+  /* Animation Timing - keep existing */
+  --animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-timing-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.4);
+  
+  /* Glass Effect Variables with new colors */
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px rgba(191, 54, 12, 0.2);
+  --glass-blur: blur(12px);
 }
 
-/* Enhanced Animations */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+/* Keep existing animations */
+
+/* Back To Top Button */
+.back-to-top {
+  background-color: var(--primary);
+  box-shadow: var(--shadow-md);
+}
+
+.back-to-top:hover {
+  background-color: var(--primary-light);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Spinner */
+#spinner .spinner-border {
+  border: 4px solid var(--primary-lighter);
+  border-top-color: var(--primary);
+  box-shadow: 0 0 15px rgba(255, 87, 34, 0.3);
+}
+
+/* Button Styles */
+.btn.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #FFFFFF;
+}
+
+.btn.btn-primary:hover {
+  background-color: var(--primary-light);
+  border-color: var(--primary-light);
+}
+
+.btn.btn-secondary {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+  color: #FFFFFF;
+}
+
+.btn.btn-secondary:hover {
+  background-color: var(--secondary-light);
+  border-color: var(--secondary-light);
+}
+
+/* Form styling */
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 15px rgba(255, 87, 34, 0.25);
+}
+
+.form-floating>.form-control:focus~label, 
+.form-floating>.form-control:not(:placeholder-shown)~label {
+  color: var(--primary);
+}
+
+.form-check-input:checked {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+/* Form Submit Button Special Styling */
+.btn-submit {
+  background: var(--primary);
+  box-shadow: 0 4px 15px rgba(255, 87, 34, 0.2);
+}
+
+.btn-submit:before {
+  background: var(--primary-dark);
+}
+
+.btn-submit:hover {
+  box-shadow: 0 7px 25px rgba(255, 87, 34, 0.4);
+}
+
+.btn-submit.success {
+  background: var(--primary-lighter);
+}
+
+.btn-submit.success:before {
+  background: var(--primary-light);
+}
+
+/* Form Success/Error Messages */
+.form-message.success {
+  background-color: rgba(255, 87, 34, 0.1);
+  color: var(--primary);
+  border-left: 4px solid var(--primary);
+}
+
+/* Navbar Styling */
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--primary) !important;
+}
+
+.navbar-light .navbar-brand img {
+  filter: drop-shadow(0 0 10px rgba(255, 87, 34, 0.3));
+}
+
+.navbar-light .navbar-nav .nav-link::before {
+  background: var(--primary);
+}
+
+/* Enhanced Hero Header with Video */
+.hero-header {
+  background: linear-gradient(rgba(191, 54, 12, 0.8), rgba(230, 74, 25, 0.8)), url(../img/bg-hero.jpg);
+}
+
+.hero-header::before {
+  background: linear-gradient(rgba(191, 54, 12, 0.6), rgba(191, 54, 12, 0.8));
+}
+
+/* Overlay styling with gradient transparency */
+.hero-overlay {
+  background: linear-gradient(
+    135deg, 
+    rgba(191, 54, 12, 0.8) 0%, 
+    rgba(255, 87, 34, 0.6) 50%, 
+    rgba(191, 54, 12, 0.8) 100%
+  );
+}
+
+/* Section Title */
+.section-title::before {
+  background: var(--primary);
+}
+
+.section-title::after {
+  background: var(--primary);
+}
+
+/* Service Items */
+.service-item:hover {
+  background: var(--primary);
+}
+
+.service-item .icon {
+  color: var(--primary);
+}
+
+/* Destination */
+.destination .overlay {
+  background: linear-gradient(rgba(191, 54, 12, 0.1), rgba(191, 54, 12, 0.7));
+}
+
+/* Package */
+.package-item .package-price {
+  background-color: var(--primary);
+}
+
+.package-item .rating {
+  color: var(--secondary);
+}
+
+/* Enhanced Booking Section */
+.booking {
+  background: linear-gradient(rgba(191, 54, 12, 0.7), rgba(191, 54, 12, 0.7)), url(../img/booking.jpg);
+}
+
+.booking::before {
+  background: linear-gradient(rgba(191, 54, 12, 0.8), rgba(191, 54, 12, 0.6));
+}
+
+.booking .form-control:focus, 
+.booking .form-select:focus {
+  box-shadow: 0 0 20px rgba(255, 87, 34, 0.3);
+}
+
+/* Team Item */
+.team-item .btn {
+  color: var(--primary);
+  border-bottom: 1px solid var(--primary);
+}
+
+.team-item .btn:hover {
+  background: var(--primary);
+}
+
+/* Testimonial */
+.testimonial-carousel .owl-item.center .testimonial-item {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.testimonial-carousel .owl-dot.active {
+  background: var(--primary);
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+  background: var(--primary);
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+  background: var(--primary-light);
+}
+
+/* Blog */
+.blog-item .blog-date {
+  background-color: var(--primary);
+}
+
+.blog-item .btn {
+  background-color: var(--primary-lighter);
+}
+
+.blog-item .btn:hover {
+  background-color: var(--primary);
+}
+
+/* Footer */
+.footer .btn.btn-social:hover {
+  color: var(--primary-lighter);
+  border-color: var(--primary-lighter);
+}
+
+.footer .btn.btn-link:hover {
+  color: var(--primary-lighter);
+}
+
+.footer .btn.btn-link:hover::before {
+  color: var(--primary-lighter);
+}
+
+.footer .form-control:focus {
+  border-color: var(--primary-lighter);
+  box-shadow: 0 0 15px rgba(255, 138, 101, 0.3);
+}
+
+.footer .newsletter-btn {
+  background: var(--primary);
+}
+
+.footer .newsletter-btn:hover {
+  background: var(--primary-light);
+}
+
+.footer .copyright a {
+  color: var(--primary-lighter);
+}
+
+/* Glass Effect Components */
+.glass-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+.glass-card:hover {
+  box-shadow: 0 15px 45px rgba(191, 54, 12, 0.3);
+}
+
+/* Utility Classes */
+.bg-primary-gradient {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+}
+
+/* Additional Festival-Inspired Utility Classes */
+.bg-festival-gradient {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent-1) 50%, var(--secondary) 100%);
+  color: white;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+.text-accent-1 {
+  color: var(--accent-1) !important;
+}
+
+.text-accent-2 {
+  color: var(--accent-2) !important;
+}
+
+.text-accent-3 {
+  color: var(--accent-3) !important;
+}
+
+.border-primary {
+  border-color: var(--primary) !important;
+}
+
+.border-festival {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, var(--primary), var(--accent-1), var(--secondary)) 1;
+}
+
+/* Festival animation for special elements */
+@keyframes festivalPulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 87, 34, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(255, 87, 34, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 87, 34, 0); }
+}
+
+.festival-pulse {
+  animation: festivalPulse 2s infinite;
+}
+
+/* Rainbow text effect for special headings */
+.rainbow-text {
+  background: linear-gradient(to right, var(--primary), var(--accent-1), var(--secondary), var(--accent-2), var(--accent-3));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow 6s ease infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes rainbow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
 
 @keyframes slideUp {
