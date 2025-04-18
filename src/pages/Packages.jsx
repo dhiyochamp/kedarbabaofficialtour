@@ -25,6 +25,20 @@ function Packages() {
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
+  // Handle brochure download
+  const handleBrochureDownload = (packageName, packageType) => {
+    // GitHub raw content URL structure
+    const baseUrl = 'https://raw.githubusercontent.com/your-username/your-repo/main/brochures/';
+    const fileName = `${packageName.toLowerCase().replace(/\s+/g, '-')}-brochure.pdf`;
+    const brochureUrl = `${baseUrl}${packageType}/${fileName}`;
+    
+    // Open in new tab or trigger download
+    window.open(brochureUrl, '_blank');
+    
+    // Track brochure downloads if needed
+    console.log(`Brochure downloaded: ${packageName}`);
+  };
+
   // Validate form
   const validateForm = () => {
     const newErrors = {};
@@ -210,9 +224,18 @@ Please send me a detailed itinerary and pricing information. Thank you!`;
                       <a href="#" className="btn btn-primary" onClick={() => directWhatsAppConnect(pkg.name, pkg.price)}>
                         <i className="fab fa-whatsapp me-2" />Book Now via WhatsApp
                       </a>
-                      <a href="#" className="btn btn-outline-primary" onClick={() => handleCustomizeClick(pkg.name, pkg.price)}>
-                        Customize Package
-                      </a>
+                      <div className="row g-2 mt-1">
+                        <div className="col-6">
+                          <a href="#" className="btn btn-outline-primary w-100" onClick={() => handleCustomizeClick(pkg.name, pkg.price)}>
+                            Customize Package
+                          </a>
+                        </div>
+                        <div className="col-6">
+                          <a href="#" className="btn btn-outline-danger w-100" onClick={() => handleBrochureDownload(pkg.name, 'india')}>
+                            <i className="fas fa-file-pdf me-1"></i> Brochure
+                          </a>
+                        </div>
+                      </div>
                     </div>
                     <div className="mt-3">
                       {pkg.includes.map((item, i) => (
@@ -300,9 +323,18 @@ Please send me a detailed itinerary and pricing information. Thank you!`;
                       <a href="#" className="btn btn-success" onClick={() => directWhatsAppConnect(pkg.name, pkg.price)}>
                         <i className="fab fa-whatsapp me-2" />Book Now via WhatsApp
                       </a>
-                      <a href="#" className="btn btn-outline-success" onClick={() => handleCustomizeClick(pkg.name, pkg.price)}>
-                        Customize Package
-                      </a>
+                      <div className="row g-2 mt-1">
+                        <div className="col-6">
+                          <a href="#" className="btn btn-outline-success w-100" onClick={() => handleCustomizeClick(pkg.name, pkg.price)}>
+                            Customize
+                          </a>
+                        </div>
+                        <div className="col-6">
+                          <a href="#" className="btn btn-outline-danger w-100" onClick={() => handleBrochureDownload(pkg.name, 'kedar-single')}>
+                            <i className="fas fa-file-pdf me-1"></i> Brochure
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -364,9 +396,18 @@ Please send me a detailed itinerary and pricing information. Thank you!`;
                       <a href="#" className="btn btn-success" onClick={() => directWhatsAppConnect(pkg.name, pkg.price)}>
                         <i className="fab fa-whatsapp me-2" />Book Now via WhatsApp
                       </a>
-                      <a href="#" className="btn btn-outline-success" onClick={() => handleCustomizeClick(pkg.name, pkg.price)}>
-                        Customize Package
-                      </a>
+                      <div className="row g-2 mt-1">
+                        <div className="col-6">
+                          <a href="#" className="btn btn-outline-success w-100" onClick={() => handleCustomizeClick(pkg.name, pkg.price)}>
+                            Customize
+                          </a>
+                        </div>
+                        <div className="col-6">
+                          <a href="#" className="btn btn-outline-danger w-100" onClick={() => handleBrochureDownload(pkg.name, 'kedar')}>
+                            <i className="fas fa-file-pdf me-1"></i> Brochure
+                          </a>
+                        </div>
+                      </div>
                     </div>
                     <div className="mt-3">
                       {pkg.includes.map((item, i) => (
@@ -451,9 +492,18 @@ Please send me a detailed itinerary and pricing information. Thank you!`;
                       <a href="#" className="btn btn-success" onClick={() => directWhatsAppConnect(pkg.name, pkg.price)}>
                         <i className="fab fa-whatsapp me-2" />Book Now via WhatsApp
                       </a>
-                      <a href="#" className="btn btn-outline-success" onClick={() => handleCustomizeClick(pkg.name, pkg.price)}>
-                        Customize Package
-                      </a>
+                      <div className="row g-2 mt-1">
+                        <div className="col-6">
+                          <a href="#" className="btn btn-outline-success w-100" onClick={() => handleCustomizeClick(pkg.name, pkg.price)}>
+                            Customize
+                          </a>
+                        </div>
+                        <div className="col-6">
+                          <a href="#" className="btn btn-outline-danger w-100" onClick={() => handleBrochureDownload(pkg.name, 'kailash')}>
+                            <i className="fas fa-file-pdf me-1"></i> Brochure
+                          </a>
+                        </div>
+                      </div>
                     </div>
                     <div className="mt-3">
                       {pkg.includes.map((item, i) => (
@@ -530,9 +580,18 @@ Please send me a detailed itinerary and pricing information. Thank you!`;
                       <a href="#" className="btn btn-success" onClick={() => directWhatsAppConnect(pkg.name, pkg.price)}>
                         <i className="fab fa-whatsapp me-2" />Book Now via WhatsApp
                       </a>
-                      <a href="#" className="btn btn-outline-success" onClick={() => handleCustomizeClick(pkg.name, pkg.price)}>
-                        Customize Package
-                      </a>
+                      <div className="row g-2 mt-1">
+                        <div className="col-6">
+                          <a href="#" className="btn btn-outline-success w-100" onClick={() => handleCustomizeClick(pkg.name, pkg.price)}>
+                            Customize
+                          </a>
+                        </div>
+                        <div className="col-6">
+                          <a href="#" className="btn btn-outline-danger w-100" onClick={() => handleBrochureDownload(pkg.name, 'nepal')}>
+                            <i className="fas fa-file-pdf me-1"></i> Brochure
+                          </a>
+                        </div>
+                      </div>
                     </div>
                     <div className="mt-3">
                       {pkg.includes.map((item, i) => (
