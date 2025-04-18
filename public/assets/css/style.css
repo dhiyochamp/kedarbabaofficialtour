@@ -1,19 +1,37 @@
 /********** Advanced Template CSS with Premium Animations & Video Support **********/
 :root {
-    --primary: #86B817;
-    --primary-light: #9ed626;
-    --primary-dark: #6a9312;
-    --secondary: #FE8800;
-    --secondary-light: #ff9c2a;
-    --secondary-dark: #e07800;
-    --light: #F5F5F5;
-    --dark: #14141F;
-    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
-    --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
-    --animation-timing: cubic-bezier(0.25, 0.1, 0.25, 1);
-    --animation-timing-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* Refined Dark Green Color Palette */
+    --primary: #1a4d2e; /* Deep forest green */
+    --primary-light: #2e7d32; /* Vibrant green */
+    --primary-lighter: #4caf50; /* Lighter green */
+    --primary-dark: #0d3018; /* Darker green */
+    --primary-darker: #093011; /* Deep dark green */
+    
+    --secondary: #ff9a3c; /* Complementary orange */
+    --secondary-light: #ffb74d;
+    --secondary-dark: #e65100;
+    
+    --light: #f8f9fa;
+    --dark: #121212;
+    --dark-2: #1e1e1e;
+    
+    /* Enhanced Shadows */
+    --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 24px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 8px 36px rgba(0, 0, 0, 0.16);
+    --shadow-primary: 0 4px 24px rgba(26, 77, 46, 0.3);
+    
+    /* Animation Timing */
+    --animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
+    --animation-timing-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.4);
+    
+    /* Glass Effect Variables */
+    --glass-bg: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    --glass-blur: blur(12px);
 }
+
 
 /* Enhanced Animations */
 @keyframes fadeIn {
