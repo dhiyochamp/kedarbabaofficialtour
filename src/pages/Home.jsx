@@ -178,13 +178,6 @@ Please provide details and quote for this pilgrimage.
                   src="/img/about.jpg"
                   alt="Vedic Guide"
                 />
-                <div className="position-absolute start-0 bottom-0 w-100 p-3 bg-primary bg-opacity-75 text-white">
-                  <p className="mb-0 text-center fw-bold">
-                    <i className="fas fa-quote-left me-2"></i>
-                    Spiritual journey to transcend material existence
-                    <i className="fas fa-quote-right ms-2"></i>
-                  </p>
-                </div>
               </div>
             </div>
             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
