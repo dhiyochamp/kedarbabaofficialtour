@@ -2837,7 +2837,10 @@
 	transform: translateY(-10px);
 	box-shadow: 0 15px 45px rgba(9, 48, 17, 0.3);
   }
-  
+  .temple-icon-bg {
+  background-color: #f9bc4a;
+}
+
   /* Utility Classes */
   .bg-primary-gradient {
 	background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
