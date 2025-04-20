@@ -355,7 +355,7 @@ Please provide details and quote for this pilgrimage.
                       { name: "Manimahesh Kailash", desc: "Sacred lake reflection of Mount Kailash", icon: "water" }
                     ].map((peak, index) => (
                       <div className="d-flex align-items-center mb-2" key={index}>
-                        <div className="flex-shrink-0 bg-primary rounded-circle p-2 me-3">
+                       <div className="flex-shrink-0 temple-icon-bg rounded-circle p-2 me-3">
                           <i className={`fas fa-${peak.icon} text-white`}></i>
                         </div>
                         <div>
