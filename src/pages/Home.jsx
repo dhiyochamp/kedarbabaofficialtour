@@ -743,7 +743,7 @@ Please provide details and quote for this pilgrimage.
         </div>
       </div>
 
-      {/* FAQ Section */}
+     {/* FAQ Section */}
       <div className="container-xxl py-5">
         <div className="container">
           <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -781,42 +781,6 @@ Please provide details and quote for this pilgrimage.
               },
             ].map((faq, index) => (
               <div className="col-lg-6 wow fadeInUp" data-wow-delay={`0.${index % 2 + 1}s`} key={index}>
-  <div className="bg-light rounded p-4 h-100">
-   <div className="col-12 text-center mt-4">
-  <a className="btn btn-outline-primary py-3 px-5 rounded-pill me-3 d-inline-flex align-items-center" href="#discover-heritage">
-    <span
-      className="me-2 d-inline-flex align-items-center justify-content-center rounded-circle"
-      style={{ width: "32px", height: "32px", backgroundColor: "#f9bc4a" }}
-    >
-      <i className="fas fa-info-circle text-white"></i>
-    </span>
-    Discover Our Heritage
-  </a>
-
-  <a className="btn btn-outline-primary py-3 px-5 rounded-pill ms-3 d-inline-flex align-items-center" href="#pilgrimage-types">
-    <span
-      className="me-2 d-inline-flex align-items-center justify-content-center rounded-circle"
-      style={{ width: "32px", height: "32px", backgroundColor: "#f9bc4a" }}
-    >
-      <i className="fas fa-map-marked-alt text-white"></i>
-    </span>
-    View Yatras
-  </a>
-</div>
-
-{/* FAQ List */}
-<div className="row">
-  {[
-    {
-      question: "What is the best time to visit Kedarnath?",
-      answer: "May to June and September to October are ideal due to clear weather.",
-    },
-    {
-       question: "Is the pilgrimage suitable for elderly travelers?",
-                answer: "Most of our pilgrimages can be adapted for elderly travelers. We offer special assistance, porter services, palanquin options, and in some locations, helicopter services. Our team creates custom itineraries based on physical capabilities."
-              },
-            ].map((faq, index) => (
-              <div className="col-lg-6 wow fadeInUp" data-wow-delay={`0.${index % 2 + 1}s`} key={index}>
                 <div className="bg-light rounded p-4 h-100">
                   <div className="d-flex align-items-center mb-3">
                     <div className="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
@@ -837,6 +801,9 @@ Please provide details and quote for this pilgrimage.
           </div>
         </div>
       </div>
+
+   
+
       {/* Back to Top */}
       <a href="#" className="btn btn-lg btn-primary btn-lg-square back-to-top"><i className="fas fa-arrow-up"></i></a>
     </div>
