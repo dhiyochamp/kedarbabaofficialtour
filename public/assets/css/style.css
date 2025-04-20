@@ -1241,67 +1241,93 @@ textarea.form-control {
   border-radius: 6px;
 }
 
-/* Enhanced Form Styling */
+/* Form Styling - Enhanced for Professional Presentation */
 .form-control, .form-select {
   height: 50px;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 6px;
-  border: 1px solid var(--border);
-  transition: all 0.4s var(--animation-timing);
-  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #E0E0E0;
+  transition: all 0.25s ease-in-out;
+  background-color: #FFFFFF;
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .form-control:focus, .form-select:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 15px rgba(26, 77, 46, 0.25);
-  transform: translateY(-3px);
+  box-shadow: 0 0 0 3px rgba(68, 181, 156, 0.12);
+  transform: translateY(-2px);
   background-color: #FFFFFF;
+  outline: none;
 }
 
 .form-control::placeholder {
-  color: var(--text-light);
-  opacity: 0.7;
+  color: #9E9E9E;
+  opacity: 0.8;
+  font-weight: 400;
 }
 
 .form-floating label {
-  padding: 10px 20px;
-  color: var(--text-medium);
+  padding: 12px 20px;
+  color: #616161;
   font-family: 'Nunito', sans-serif;
+  font-weight: 500;
 }
 
 .form-floating>.form-control:focus~label, 
 .form-floating>.form-control:not(:placeholder-shown)~label {
-  opacity: 0.8;
+  opacity: 0.9;
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
-  color: var(--primary);
+  color: var(--primary-dark);
+  font-weight: 600;
 }
 
 textarea.form-control {
   height: 150px;
   resize: none;
+  padding: 16px 20px;
+  line-height: 1.6;
+}
+
+.form-check-input {
+  width: 18px;
+  height: 18px;
+  margin-top: 0.25em;
+  vertical-align: top;
+  cursor: pointer;
+  border: 1.5px solid #BDBDBD;
 }
 
 .form-check-input:checked {
   background-color: var(--primary);
   border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(68, 181, 156, 0.1);
 }
 
-/* Form Submit Button Special Styling */
+.form-check-label {
+  margin-left: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Form Submit Button - Professional Enhancement */
 .btn-submit {
   background: var(--primary);
   color: #FFFFFF;
-  padding: 12px 30px;
-  font-size: 18px;
-  font-weight: 700;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: 600;
   border: none;
   border-radius: 6px;
   position: relative;
   overflow: hidden;
-  transition: all 0.4s var(--animation-timing-bounce);
-  box-shadow: 0 4px 15px rgba(26, 77, 46, 0.2);
+  transition: all 0.3s ease-out;
+  box-shadow: 0 4px 10px rgba(45, 120, 105, 0.15);
   z-index: 1;
+  width: 100%;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
 }
 
 .btn-submit:before {
@@ -1313,51 +1339,58 @@ textarea.form-control {
   height: 100%;
   background: var(--primary-dark);
   z-index: -1;
-  transition: width 0.6s var(--animation-timing);
+  transition: width 0.3s ease-in-out;
 }
 
 .btn-submit:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 7px 25px rgba(26, 77, 46, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(45, 120, 105, 0.2);
 }
 
 .btn-submit:hover:before {
   width: 100%;
 }
 
+.btn-submit:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(45, 120, 105, 0.15);
+}
+
 .btn-submit.processing {
   pointer-events: none;
-  background: #cccccc;
+  background: #BDBDBD;
 }
 
 .btn-submit.success {
-  background: var(--primary-lighter);
+  background: var(--primary-light);
 }
 
 .btn-submit.success:before {
-  background: var(--primary-light);
+  background: var(--primary);
 }
 
 .btn-submit .spinner-border {
   width: 1.2rem;
   height: 1.2rem;
-  margin-right: 8px;
+  margin-right: 10px;
   display: none;
+  border-width: 0.2em;
 }
 
 .btn-submit.processing .spinner-border {
   display: inline-block;
 }
 
-/* Form Success/Error Messages */
+/* Form Messages - Professional Style */
 .form-message {
-  padding: 15px;
-  margin-top: 15px;
+  padding: 16px;
+  margin-top: 16px;
   border-radius: 6px;
-  font-weight: 600;
+  font-weight: 500;
   transform: translateY(20px);
   opacity: 0;
-  transition: all 0.4s var(--animation-timing);
+  transition: all 0.3s ease-out;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .form-message.show {
@@ -1366,28 +1399,103 @@ textarea.form-control {
 }
 
 .form-message.success {
-  background-color: rgba(26, 77, 46, 0.1);
-  color: var(--primary);
+  background-color: rgba(68, 181, 156, 0.08);
+  color: var(--primary-dark);
   border-left: 4px solid var(--primary);
 }
 
 .form-message.error {
-  background-color: rgba(220, 53, 69, 0.1);
-  color: #dc3545;
-  border-left: 4px solid #dc3545;
+  background-color: rgba(220, 53, 69, 0.08);
+  color: #d32f2f;
+  border-left: 4px solid #d32f2f;
 }
 
-/* Navbar Styling */
+/* Form Group Spacing - Professional Layout */
+.form-group {
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #424242;
+  font-size: 15px;
+}
+
+/* Form Validation Styling */
+.was-validated .form-control:valid {
+  border-color: #4CAF50;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%234CAF50' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.was-validated .form-control:invalid {
+  border-color: #F44336;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23F44336'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23F44336' stroke='none'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+/* Field Focus State Animation */
+.form-control:focus, .form-select:focus {
+  animation: fieldFocus 0.2s ease-in-out forwards;
+}
+
+@keyframes fieldFocus {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+  100% { transform: translateY(-2px); }
+}
+
+/* Field Groups for Layout */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.form-col {
+  flex: 1 0 0%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* Helper Text */
+.form-text {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #757575;
+}
+
+/* Required Field Indicator */
+.required-field::after {
+  content: "*";
+  color: #F44336;
+  margin-left: 4px;
+}
+/* Enhanced Navbar Styling with Improved Responsiveness */
+.navbar-light {
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
 .navbar-light .navbar-nav .nav-link {
   font-family: 'Nunito', sans-serif;
   position: relative;
-  margin-right: 25px;
-  padding: 35px 0;
+  margin-right: 28px;
+  padding: 30px 0;
   color: #FFFFFF !important;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   outline: none;
-  transition: all 0.4s var(--animation-timing);
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
@@ -1400,38 +1508,126 @@ textarea.form-control {
   color: var(--primary) !important;
 }
 
+/* Improved Logo Styling */
+.navbar-light .navbar-brand {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
 .navbar-light .navbar-brand img {
-  max-height: 60px;
-  transition: all 0.4s var(--animation-timing);
-  filter: drop-shadow(0 0 10px rgba(26, 77, 46, 0.3));
+  max-height: 50px;
+  width: auto;
+  transition: all 0.3s ease;
+  filter: none; /* Removed shadow for cleaner look */
 }
 
 .sticky-top.navbar-light .navbar-brand img {
-  max-height: 45px;
-  filter: none;
+  max-height: 40px;
+}
+
+/* Mobile Nav Toggle Button */
+.navbar-light .navbar-toggler {
+  padding: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.sticky-top.navbar-light .navbar-toggler {
+  background: rgba(68, 181, 156, 0.1);
+}
+
+.navbar-light .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.sticky-top.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(33, 33, 33, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Contact Button in Navbar */
+.navbar-light .nav-contact {
+  padding: 8px 20px !important;
+  margin-left: 10px;
+  background: var(--primary);
+  color: #FFFFFF !important;
+  border-radius: 50px;
+  display: inline-block;
+  text-align: center;
+}
+
+.navbar-light .nav-contact:hover {
+  background: var(--primary-dark);
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1199.98px) {
+  .navbar-light .navbar-nav .nav-link {
+    margin-right: 20px;
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 991.98px) {
+  .navbar {
+    padding: 15px 0;
+  }
+
   .sticky-top.navbar-light {
-    position: relative;
+    position: fixed;
     background: #FFFFFF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   }
 
   .navbar-light .navbar-collapse {
     margin-top: 15px;
-    border-top: 1px solid #DDDDDD;
-    animation: slideDown 0.5s var(--animation-timing);
+    padding: 15px;
+    border-top: 1px solid #EEEEEE;
+    background: #FFFFFF;
+    border-radius: 0 0 8px 8px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   }
 
   .navbar-light .navbar-nav .nav-link,
   .sticky-top.navbar-light .navbar-nav .nav-link {
-    padding: 10px 0;
-    margin-left: 0;
+    padding: 12px 0;
+    margin: 0;
     color: var(--dark) !important;
+    border-bottom: 1px solid #F5F5F5;
+  }
+
+  .navbar-light .navbar-nav .nav-link:last-child {
+    border-bottom: none;
   }
 
   .navbar-light .navbar-brand img {
-    max-height: 45px;
+    max-height: 40px;
+  }
+
+  .navbar-light .nav-contact {
+    margin: 15px 0 5px;
+    display: inline-block;
+    width: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar {
+    padding: 12px 0;
+  }
+
+  .navbar-light .navbar-brand img {
+    max-height: 36px;
   }
 }
 
@@ -1443,35 +1639,81 @@ textarea.form-control {
     left: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 999;
+    padding: 0 20px;
   }
   
   .sticky-top.navbar-light {
     position: fixed;
     background: #FFFFFF;
-    animation: slideDown 0.5s var(--animation-timing);
-    box-shadow: var(--shadow-md);
+    animation: slideDown 0.4s ease-out;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   }
 
+  /* Improved hover effect */
   .navbar-light .navbar-nav .nav-link::before {
     position: absolute;
     content: "";
     width: 0;
     height: 2px;
-    bottom: -1px;
+    bottom: 25px;
     left: 50%;
     background: var(--primary);
-    transition: all 0.4s var(--animation-timing);
+    transition: all 0.3s ease;
+    opacity: 0;
+  }
+
+  .sticky-top.navbar-light .navbar-nav .nav-link::before {
+    bottom: 15px;
   }
 
   .navbar-light .navbar-nav .nav-link:hover::before,
   .navbar-light .navbar-nav .nav-link.active::before {
-    width: calc(100% - 2px);
-    left: 1px;
+    width: 80%;
+    left: 10%;
+    opacity: 1;
   }
 
-  .navbar-light .navbar-nav .nav-link.nav-contact::before {
+  /* Don't show underline for contact button */
+  .navbar-light .navbar-nav .nav-contact::before {
     display: none;
   }
+  
+  /* Container width adjustments for better spacing */
+  .navbar .container,
+  .navbar .container-fluid {
+    padding: 0 15px;
+  }
+}
+
+/* Special styling for dropdown menus */
+.navbar-light .dropdown-menu {
+  margin-top: 0;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  min-width: 200px;
+}
+
+.navbar-light .dropdown-item {
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--dark);
+  transition: all 0.2s ease;
+}
+
+.navbar-light .dropdown-item:hover,
+.navbar-light .dropdown-item:focus {
+  background-color: rgba(68, 181, 156, 0.08);
+  color: var(--primary);
+}
+
+/* Logo container for better alignment */
+.logo-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 /* Enhanced Hero Header with Video */
