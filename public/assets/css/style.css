@@ -83,7 +83,10 @@
 	50% { transform: translateY(-15px); }
 	100% { transform: translateY(0); }
   }
-  
+  .most-popular-badge {
+  background-color: #f9bc4a;
+}
+
   /* Animation Utility Classes */
   .animate-fadeIn { animation: fadeIn 0.8s var(--animation-timing) forwards; }
   .animate-slideUp { animation: slideUp 0.8s var(--animation-timing) forwards; }
