@@ -2934,3 +2934,14 @@
 	  display: none !important;
 	}
   }
+.faq-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #f9bc4a;
+}
+
+.faq-btn-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #f9bc4a;
+}
