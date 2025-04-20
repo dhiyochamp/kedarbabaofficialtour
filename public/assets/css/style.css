@@ -8,8 +8,8 @@
 	--primary: var(--logo-teal);
 	--primary-light: #6ac7b3;
 	--primary-lighter: #c5ebe2;
-	--primary-dark: #3a9a85;
-	--primary-darker: #2d7869;
+	--primary-dark:  #44b59c;
+	--primary-darker:  #44b59c;
 	
 	/* Secondary Colors */
 	--secondary: var(--logo-gold);
@@ -246,7 +246,7 @@
   
   .form-control:focus, .form-select:focus {
 	border-color: var(--primary);
-	box-shadow: 0 0 0 3px rgba(68, 181, 156, 0.15);
+	box-shadow: 0 0 0 3px  #44b59c;
 	transform: translateY(-2px);
 	background-color: #FFFFFF;
 	outline: none;
@@ -433,7 +433,7 @@
 	position: relative;
 	margin-right: 25px;
 	padding: 35px 0;
-	color: #FFFFFF !important;
+	color:  #44b59c !important;
 	font-size: 17px;
 	font-weight: 600;
 	outline: none;
@@ -497,7 +497,7 @@
 	
 	.sticky-top.navbar-light {
 	  position: fixed;
-	  background: #FFFFFF;
+	  background:  #44b59c;
 	  animation: slideDown 0.5s var(--animation-timing);
 	  box-shadow: var(--shadow-md);
 	}
