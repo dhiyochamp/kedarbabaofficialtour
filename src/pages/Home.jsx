@@ -283,7 +283,7 @@ Please provide details and quote for this pilgrimage.
                       { name: "Kalpeshwar", desc: "Hair (jata) manifestation in cave", icon: "wind" }
                     ].map((temple, index) => (
                       <div className="d-flex align-items-center mb-2" key={index}>
-                        <div className="flex-shrink-0 bg-primary rounded-circle p-2 me-3">
+                       <div className="flex-shrink-0 temple-icon-bg rounded-circle p-2 me-3">
                           <i className={`fas fa-${temple.icon} text-white`}></i>
                         </div>
                         <div>
