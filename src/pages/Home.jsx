@@ -238,8 +238,15 @@ Please provide details and quote for this pilgrimage.
                   <i className="fas fa-info-circle me-2"></i>Discover Our Heritage
                 </a>
                 <a className="btn btn-outline-primary py-3 px-5 rounded-pill ms-3" href="#pilgrimage-types">
-                  <i className="fas fa-map-marked-alt me-2"></i>View Yatras
-                </a>
+  <span
+    className="me-2 d-inline-flex align-items-center justify-content-center rounded-circle"
+    style={{ width: "32px", height: "32px", backgroundColor: "#f9bc4a" }}
+  >
+    <i className="fas fa-map-marked-alt text-white"></i>
+  </span>
+  View Yatras
+</a>
+
               </div>
             </div>
           </div>
@@ -774,26 +781,34 @@ Please provide details and quote for this pilgrimage.
               },
             ].map((faq, index) => (
               <div className="col-lg-6 wow fadeInUp" data-wow-delay={`0.${index % 2 + 1}s`} key={index}>
-                <div className="bg-light rounded p-4 h-100">
-                  <div className="d-flex align-items-center mb-3">
-                    <div className="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                      <i className="fa fa-question text-white"></i>
-                    </div>
-                    <h5 className="mb-0">{faq.question}</h5>
-                  </div>
-                  <p className="mb-0">{faq.answer}</p>
-                </div>
-              </div>
+  <div className="bg-light rounded p-4 h-100">
+    <div className="d-flex align-items-center mb-3">
+      <div
+        className="flex-shrink-0 btn-square rounded-circle me-3 d-flex align-items-center justify-content-center"
+        style={{ width: "40px", height: "40px", backgroundColor: "#f9bc4a" }}
+      >
+        <i className="fa fa-question text-white"></i>
+      </div>
+      <h5 className="mb-0">{faq.question}</h5>
+    </div>
+    <p className="mb-0">{faq.answer}</p>
+  </div>
+</div>
+
             ))}
             
-            <div className="col-12 text-center mt-4">
-              <a href="/faqs" className="btn btn-outline-primary rounded-pill px-5 py-3">
-                <i className="fas fa-question-circle me-2"></i>View All FAQs
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+           <div className="col-12 text-center mt-4">
+  <a href="/faqs" className="btn btn-outline-primary rounded-pill px-5 py-3 d-inline-flex align-items-center">
+    <span
+      className="me-2 d-inline-flex align-items-center justify-content-center rounded-circle"
+      style={{ width: "32px", height: "32px", backgroundColor: "#f9bc4a" }}
+    >
+      <i className="fas fa-question-circle text-white"></i>
+    </span>
+    View All FAQs
+  </a>
+</div>
+
 
    
 
