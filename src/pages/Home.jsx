@@ -831,9 +831,6 @@ Please provide details and quote for this pilgrimage.
       </div>
     </div>
   ))}
-</div>
-    
-
 {/* View All FAQs Button */}
 <div className="col-12 text-center mt-4">
   <a href="/faqs" className="btn btn-outline-primary rounded-pill px-5 py-3 d-inline-flex align-items-center">
@@ -849,10 +846,6 @@ Please provide details and quote for this pilgrimage.
     </div>
         </div>
       </div>
-
-
-   
-
       {/* Back to Top */}
       <a href="#" className="btn btn-lg btn-primary btn-lg-square back-to-top"><i className="fas fa-arrow-up"></i></a>
     </div>
