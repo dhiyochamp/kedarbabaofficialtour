@@ -1,20 +1,25 @@
 :root {
-  /* Vibrant Festival Color Palette */
-  --primary: #FF5722; /* Vibrant orange from image */
-  --primary-light: #FF8A65; /* Lighter orange */
-  --primary-lighter: #FFCCBC; /* Very light orange for accents */
-  --primary-dark: #E64A19; /* Darker orange for borders and text */
-  --primary-darker: #BF360C; /* Deep orange for shadows */
+  /* Logo Colors */
+  --logo-gold: #f9bc4a; /* Golden yellow from logo */
+  --logo-teal: #44b59c; /* Teal/turquoise from logo */
+  --logo-teal-dark: #3a9a85; /* Darker version for hover states */
   
-  /* Complementary colors */
-  --secondary: #2196F3; /* Bright blue from image */
-  --secondary-light: #64B5F6; /* Lighter blue */
-  --secondary-dark: #1976D2; /* Darker blue */
+  /* Primary Colors (Based on Logo) */
+  --primary: var(--logo-teal); /* Using teal as primary */
+  --primary-light: #6ac7b3; /* Lighter teal */
+  --primary-lighter: #c5ebe2; /* Very light teal for accents */
+  --primary-dark: var(--logo-teal-dark); /* Darker teal for emphasis */
+  --primary-darker: #2d7869; /* Deep teal for shadows */
+  
+  /* Secondary Colors (Based on Logo) */
+  --secondary: var(--logo-gold); /* Using gold as secondary */
+  --secondary-light: #fad078; /* Lighter gold */
+  --secondary-dark: #e6a932; /* Darker gold */
   
   /* Accent colors */
-  --accent-1: #E91E63; /* Pink from image */
-  --accent-2: #FFEB3B; /* Yellow from image */
-  --accent-3: #4CAF50; /* Green elements */
+  --accent-1: #E91E63; /* Pink accent */
+  --accent-2: #2196F3; /* Blue accent */
+  --accent-3: #4CAF50; /* Green accent */
   
   /* Neutrals */
   --light: #FFFFFF;
@@ -23,6 +28,8 @@
   --border: #EEEEEE;
   --text-medium: #616161;
   --text-light: #9E9E9E;
+}
+
   
   /* Enhanced Shadows with new colors */
   --shadow-sm: 0 2px 12px rgba(191, 54, 12, 0.08);
