@@ -816,28 +816,22 @@ Please provide details and quote for this pilgrimage.
       answer: "Yes, there are guesthouses and tents in Chopta near Tungnath base.",
     },
   ].map((faq, index) => (
-    <div className="col-lg-6 wow fadeInUp" data-wow-delay={`0.${index % 2 + 1}s`} key={index}>
-      <div className="bg-light rounded p-4 h-100">
-        <div className="d-flex align-items-center mb-3">
-          <div
-            className="flex-shrink-0 btn-square rounded-circle me-3 d-flex align-items-center justify-content-center"
-            style={{ width: "40px", height: "40px", backgroundColor: "#f9bc4a" }}
-          >
-            <i className="fa fa-question text-white"></i>
-          </div>
-          <h5 className="mb-0">{faq.question}</h5>
+      <div className="col-lg-6 wow fadeInUp" data-wow-delay={`0.${index % 2 + 1}s`} key={index}>
+    <div className="bg-light rounded p-4 h-100">
+      <div className="d-flex align-items-center mb-3">
+        <div className="faq-icon flex-shrink-0 rounded-circle d-flex align-items-center justify-content-center me-3">
+          <i className="fa fa-question text-white"></i>
         </div>
-        <p className="mb-0">{faq.answer}</p>
+        <h5 className="mb-0">{faq.question}</h5>
       </div>
+      <p className="mb-0">{faq.answer}</p>
     </div>
-  ))}
-{/* View All FAQs Button */}
+  </div>
+))}
+
 <div className="col-12 text-center mt-4">
   <a href="/faqs" className="btn btn-outline-primary rounded-pill px-5 py-3 d-inline-flex align-items-center">
-    <span
-      className="me-2 d-inline-flex align-items-center justify-content-center rounded-circle"
-      style={{ width: "32px", height: "32px", backgroundColor: "#f9bc4a" }}
-    >
+    <span className="faq-btn-icon me-2 d-inline-flex align-items-center justify-content-center rounded-circle">
       <i className="fas fa-question-circle text-white"></i>
     </span>
     View All FAQs
