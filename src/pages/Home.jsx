@@ -782,22 +782,60 @@ Please provide details and quote for this pilgrimage.
             ].map((faq, index) => (
               <div className="col-lg-6 wow fadeInUp" data-wow-delay={`0.${index % 2 + 1}s`} key={index}>
   <div className="bg-light rounded p-4 h-100">
-    <div className="d-flex align-items-center mb-3">
-      <div
-        className="flex-shrink-0 btn-square rounded-circle me-3 d-flex align-items-center justify-content-center"
-        style={{ width: "40px", height: "40px", backgroundColor: "#f9bc4a" }}
-      >
-        <i className="fa fa-question text-white"></i>
-      </div>
-      <h5 className="mb-0">{faq.question}</h5>
-    </div>
-    <p className="mb-0">{faq.answer}</p>
-  </div>
+   <div className="col-12 text-center mt-4">
+  <a className="btn btn-outline-primary py-3 px-5 rounded-pill me-3 d-inline-flex align-items-center" href="#discover-heritage">
+    <span
+      className="me-2 d-inline-flex align-items-center justify-content-center rounded-circle"
+      style={{ width: "32px", height: "32px", backgroundColor: "#f9bc4a" }}
+    >
+      <i className="fas fa-info-circle text-white"></i>
+    </span>
+    Discover Our Heritage
+  </a>
+
+  <a className="btn btn-outline-primary py-3 px-5 rounded-pill ms-3 d-inline-flex align-items-center" href="#pilgrimage-types">
+    <span
+      className="me-2 d-inline-flex align-items-center justify-content-center rounded-circle"
+      style={{ width: "32px", height: "32px", backgroundColor: "#f9bc4a" }}
+    >
+      <i className="fas fa-map-marked-alt text-white"></i>
+    </span>
+    View Yatras
+  </a>
 </div>
 
-            ))}
-            
-           <div className="col-12 text-center mt-4">
+{/* FAQ List */}
+<div className="row">
+  {[
+    {
+      question: "What is the best time to visit Kedarnath?",
+      answer: "May to June and September to October are ideal due to clear weather.",
+    },
+    {
+      question: "Is there any accommodation nearby Tungnath?",
+      answer: "Yes, there are guesthouses and tents in Chopta near Tungnath base.",
+    },
+  ].map((faq, index) => (
+    <div className="col-lg-6 wow fadeInUp" data-wow-delay={`0.${index % 2 + 1}s`} key={index}>
+      <div className="bg-light rounded p-4 h-100">
+        <div className="d-flex align-items-center mb-3">
+          <div
+            className="flex-shrink-0 btn-square rounded-circle me-3 d-flex align-items-center justify-content-center"
+            style={{ width: "40px", height: "40px", backgroundColor: "#f9bc4a" }}
+          >
+            <i className="fa fa-question text-white"></i>
+          </div>
+          <h5 className="mb-0">{faq.question}</h5>
+        </div>
+        <p className="mb-0">{faq.answer}</p>
+      </div>
+    </div>
+  ))}
+</div>
+    
+
+{/* View All FAQs Button */}
+<div className="col-12 text-center mt-4">
   <a href="/faqs" className="btn btn-outline-primary rounded-pill px-5 py-3 d-inline-flex align-items-center">
     <span
       className="me-2 d-inline-flex align-items-center justify-content-center rounded-circle"
@@ -808,6 +846,9 @@ Please provide details and quote for this pilgrimage.
     View All FAQs
   </a>
 </div>
+    </div>
+        </div>
+      </div>
 
 
    
