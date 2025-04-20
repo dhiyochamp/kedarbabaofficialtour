@@ -262,9 +262,10 @@ Please provide details and quote for this pilgrimage.
               <div className="card h-100 border-0 rounded-3 shadow-lg overflow-hidden">
                 <div className="position-relative">
                   <img src="/img/panch-kedar.jpg" className="card-img-top" alt="Panch Kedar" />
-                  <div className="position-absolute top-0 start-0 m-3 py-2 px-4 bg-primary rounded">
-                    <span className="text-white fw-bold">Most Popular</span>
-                  </div>
+                  <div className="most-popular-badge position-absolute top-0 start-0 m-3 py-2 px-4 rounded">
+  <span className="text-white fw-bold">Most Popular</span>
+              </div>
+
                 </div>
                 <div className="card-body p-4">
                   <h3 className="card-title text-primary mb-3">Panch Kedar Yatra</h3>
@@ -322,7 +323,7 @@ Please provide details and quote for this pilgrimage.
                       <small className="text-muted">Duration: 7-10 days</small>
                     </div>
                     <div>
-                      <div className="badge bg-primary rounded-pill">Best Season: May-Jun & Sep-Oct</div>
+                     <div className="badge rounded-pill" style={{ backgroundColor: "#f9bc4a" }}>Best Season: May-Jun & Sep-Oct</div>
                     </div>
                   </div>
                 </div>
@@ -394,7 +395,7 @@ Please provide details and quote for this pilgrimage.
                       <small className="text-muted">Duration: 14-21 days</small>
                     </div>
                     <div>
-                      <div className="badge bg-primary rounded-pill">Best Season: Jun-Sep</div>
+                     <div className="badge rounded-pill" style={{ backgroundColor: "#f9bc4a" }}>Best Season: Jun & Sep-Oct</div>
                     </div>
                   </div>
                 </div>
@@ -403,9 +404,9 @@ Please provide details and quote for this pilgrimage.
             
             {/* View All Pilgrimages Button */}
             <div className="col-12 text-center mt-4">
-              <a href="/all-pilgrimages" className="btn btn-outline-primary rounded-pill px-5 py-3">
-                <i className="fas fa-list me-2"></i>View All Sacred Journeys
-              </a>
+             <a href="/all-pilgrimages" className="btn rounded-pill px-5 py-3" style={{ color: "#f9bc4a", borderColor: "#f9bc4a" }}>
+  <i className="fas fa-list me-2"></i>View All Sacred Journeys
+</a>
             </div>
           </div>
         </div>
