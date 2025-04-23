@@ -171,7 +171,7 @@ Please send me a detailed itinerary and pricing information. Thank you!`;
               { 
                 name: 'Char Dham Yatra', 
                 location: 'Uttarakhand', 
-                price: 38500,
+                price: 19000,
                 details: 'Moksha-giving circuit (Badrinath, Kedarnath, Gangotri, Yamunotri) with VIP darshan',
                 duration: '10D/9N',
                 includes: ['Ganga Aarti', 'Rudrabhishek', 'Helicopter Access']
@@ -267,9 +267,9 @@ Please send me a detailed itinerary and pricing information. Thank you!`;
               { 
                 name: 'Tungnath Package', 
                 location: 'Uttarakhand', 
-                price: 5999,
+                price: 6500,
                 details: 'Visit the highest Shiva temple in the world with spiritual guides',
-                duration: '2D/1N',
+                duration: '3D/2N',
                 includes: ['Trek Support', 'Accommodation', 'Breakfast']
               },
               { 
@@ -283,17 +283,17 @@ Please send me a detailed itinerary and pricing information. Thank you!`;
               { 
                 name: 'Madhyamaheshwar Package', 
                 location: 'Uttarakhand', 
-                price: 7999,
+                price: 9000-11000 ,
                 details: 'Journey to the navel form of Lord Shiva in serene Himalayan settings',
-                duration: '3D/2N',
+                duration: '4D/3N',
                 includes: ['Accommodation', 'Special Puja', 'Transport']
               },
               { 
                 name: 'Rudranath + Kalpeshwar Package', 
                 location: 'Uttarakhand', 
-                price: 9999,
+                price: 9000-11000,
                 details: 'Combined pilgrimage to face and matted hair forms of Lord Shiva',
-                duration: '4D/3N',
+                duration: '5D/4N',
                 includes: ['All Transfers', 'Meals', 'Temple Guide']
               },
             ].map((pkg, index) => (
@@ -348,18 +348,18 @@ Please send me a detailed itinerary and pricing information. Thank you!`;
               { 
                 name: 'Complete Panch Kedar', 
                 location: 'Uttarakhand', 
-                price: 34999, // Updated price
+                price: 37000, // Updated price
                 details: 'Sacred pilgrimage to all five Kedar temples - Kedarnath, Tungnath, Rudranath, Madhyamaheshwar & Kalpeshwar',
-                duration: '9D/8N',
-                includes: ['VIP Darshan', 'Helicopter Option', 'Trek Support', 'All Accommodation']
+                duration: '12D/11N',
+                includes: ['VIP Darshan', 'Trek Support', 'All Accommodation']
               },
               { 
                 name: 'Kedarnath-Tungnath Trek', 
                 location: 'Uttarakhand', 
-                price: 28999,
+                price: 9500,
                 details: 'Trek to two majestic Kedar Shiva temples with spiritual guides',
                 duration: '5D/4N',
-                includes: ['Trek Equipment', 'Puja Samagri', 'Camping']
+                includes: ['Trek Equipment', 'Camping']
               },
               { 
                 name: 'Rudranath-Madhyamaheshwar', 
@@ -367,7 +367,7 @@ Please send me a detailed itinerary and pricing information. Thank you!`;
                 price: 32599,
                 details: 'Mystical trek to remote Shiva shrines with meditation sessions',
                 duration: '6D/5N',
-                includes: ['Yoga Sessions', 'Local Guide', 'Forest Camping']
+                includes: ['Local Guide', 'Forest Camping']
               },
             ].map((pkg, index) => (
               <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay={`0.${index+1}s`} key={index}>
@@ -444,7 +444,7 @@ Please send me a detailed itinerary and pricing information. Thank you!`;
               { 
                 name: 'Adi Kailash', 
                 location: 'Uttarakhand', 
-                price: 69999,
+                price: 32000,
                 details: 'Sacred alternative to Kailash Mansarovar within Indian territory',
                 duration: '10D/9N',
                 includes: ['Om Parvat View', 'Jungle Trek', 'Meditation']
